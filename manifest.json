@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Network Traffic Capture",
+  "version": "1.0",
+  "description": "Capture all network traffic",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "http://localhost:7090/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
